@@ -1,0 +1,254 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    
+   
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    
+    /* grey used for paragraphs */
+    
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+
+   
+ 
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}   
+
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+    font-size: 20px;
+  }
+/*--------------Nav   ------------*/
+  nav {
+    background: var(--clr-white);
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    box-shadow: var(--dark-shadow);
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: var(--fixed-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-center h4 {
+    margin-bottom: 0;
+    color: var(--clr-primary-5);
+  }
+  .nav-links {
+    display: flex;
+  }
+  nav a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--clr-primary-1);
+    letter-spacing: var(--spacing);
+    margin-right: 1rem;
+  }
+  nav a:hover {
+    color: var(--clr-primary-5);
+  }
+
+
+h1{
+    text-align: center ;
+    margin-top: 5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 10;
+    color: #000000;
+}
+.pickr-container{
+    margin-top: 10%;
+    text-align: center;
+    
+}
+.color{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
+.pickr-container h1 button{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 8px;
+   
+
+}
+.pickr-container button{
+   background-color:#ece1e1 ;
+}
+.pickr-container h1 button:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: #000000;
+}
+.pickr-container p{
+    font-family: sans-serif;
+    color: #8a8181;
+}
+.color p{
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    
+}
+
+/*==================== FOOTER ====================*/
+
+footer{
+  padding: 20px 5%  14%;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 0.1rem;
+  background: #1a142f;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-content p{
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.icon p{
+  text-decoration-line: underline;
+}
+.icon a{
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  margin-right: 20px;
+  transition: all .40s ease;
+}
+.icon a:hover{
+  color: aliceblue;
+  transform: translateY(-5px);
+}
+.logo{
+  font-size: 33px;
+  color: #fff;
+  font-family: cursive;
+  font-weight: 400;
+}
+span{
+  color: #6f4bf0;
+}
+.footer-content h4{
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+.footer-content li{
+  margin-bottom: 16px;
+}
+.footer-content li a{
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+}
+.footer-content li a:hover{
+  transform: translateY(-3px) translateX(-5px);
+  color: #fff;
+}
+.copyright{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+  
+
+.copyright p{
+  color: #fff;
+  text-align: center;
+  margin-top: -10%;
+  font-family: sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+}   
+
+@media (max-width: 600px){
+    h1{
+        font-size: 24px;
+        margin-top: 90px;
+    }
+ 
+       
+    .color{
+        margin-top: 20px;
+    }
+    .logo{
+      font-size: 25px;
+    }
+    .footer-content h4{
+      font-size: 17px;
+    }
+    .footer-content li a{
+      font-size: 13px;
+    }
+    .footer-content p{
+      font-size: 14px;
+    }
+    .icon a{
+      font-size: 19px;
+    }
+    .copyright p{
+      font-size: 11px;
+    }
+
+}
