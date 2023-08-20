@@ -192,6 +192,7 @@ span{
 }
 .footer-content li{
   margin-bottom: 16px;
+    list-style: none;
 }
 .footer-content li a{
   display: block;
